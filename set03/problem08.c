@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <math.h>
+int main() {
+    Polygon poly;
 
+    if (!input_polygon(&poly))
+        return 1; 
+
+    find_perimeter(&poly);
+
+    output(poly);
+
+    return 0;
+}
 typedef struct point {
     float x, y;
 } Point;
@@ -11,7 +22,6 @@ typedef struct polygon {
     float perimeter;
 } Polygon;
 
-// Function to input the number of sides of the polygon
 int input_n() {
     int n;
     printf("Enter the number of sides of the polygon: ");
@@ -19,7 +29,6 @@ int input_n() {
     return n;
 }
 
-// Function to input a point
 Point input_point(char *prompt_msg) {
     Point p;
     printf("%s\n", prompt_msg);
@@ -30,12 +39,11 @@ Point input_point(char *prompt_msg) {
     return p;
 }
 
-// Function to input a polygon
 int input_polygon(Polygon *p) {
     p->sides = input_n();
     if (p->sides < 3 || p->sides > 100) {
         printf("Invalid number of sides. Please enter a value between 3 and 100.\n");
-        return 0; // Return 0 to indicate input error
+        return 0; 
     }
 
     for (int i = 0; i < p->sides; i++) {
@@ -44,7 +52,7 @@ int input_polygon(Polygon *p) {
         p->p[i] = input_point(prompt_msg);
     }
 
-    return 1; 
+    return 1; }
 
 float find_distance(Point a, Point b) {
     return sqrt(pow((b.x - a.x), 2) + pow((b.y - a.y), 2));
