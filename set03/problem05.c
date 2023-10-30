@@ -14,7 +14,6 @@ int main() {
 
     return 0;
 }
-// Function to input the array size (n)
 int input_array_size() {
     int n;
     printf("Enter the upper limit (n): ");
@@ -22,19 +21,17 @@ int input_array_size() {
     return n;
 }
 
-// Function to initialize the array with 1 (true)
 void init_array(int n, int a[n]) {
     for (int i = 2; i <= n; i++) {
-        a[i] = 1; // Set all elements to 1 initially (true)
+        a[i] = 1; 
     }
 }
 
-// Function to apply Eratosthenes Sieve method
 void eratosthenes_sieve(int n, int a[n]) {
     for (int i = 2; i * i <= n; i++) {
         if (a[i] == 1) {
             for (int j = i * i; j <= n; j += i) {
-                a[j] = 0; // Mark multiples of i as composite (false)
+                a[j] = 0; 
             }
         }
     }
