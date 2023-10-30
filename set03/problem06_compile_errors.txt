@@ -1,0 +1,6 @@
+Compilation started at 10/30/2023, 10:18:32 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem06.c: In function 'sub_str_index':
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem06.c:49:1: error: expected declaration or statement at end of input
+ }
+ ^
+Compilation finished at 10/30/2023, 10:18:32 PM
