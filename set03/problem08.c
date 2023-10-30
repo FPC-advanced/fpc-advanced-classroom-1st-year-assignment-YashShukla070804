@@ -44,15 +44,12 @@ int input_polygon(Polygon *p) {
         p->p[i] = input_point(prompt_msg);
     }
 
-    return 1; // Return 1 to indicate successful input
-}
+    return 1; 
 
-// Function to calculate the distance between two points
 float find_distance(Point a, Point b) {
     return sqrt(pow((b.x - a.x), 2) + pow((b.y - a.y), 2));
 }
 
-// Function to calculate the perimeter of the polygon
 void find_perimeter(Polygon *p) {
     float perimeter = 0;
 
@@ -63,20 +60,8 @@ void find_perimeter(Polygon *p) {
     p->perimeter = perimeter;
 }
 
-// Function to output the result
 void output(Polygon p) {
     printf("The perimeter of the polygon is %.2f units.\n", p.perimeter);
 }
 
-int main() {
-    Polygon poly;
 
-    if (!input_polygon(&poly))
-        return 1; 
-
-    find_perimeter(&poly);
-
-    output(poly);
-
-    return 0;
-}
