@@ -39,7 +39,7 @@ int sub_str_index(char* string, char* substring) {
             return i;
     }
 
-    return -1; 
+    return -1; }
 
 
 void output(char* string, char* substring, int index) {
