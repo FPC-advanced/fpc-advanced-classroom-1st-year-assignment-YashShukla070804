@@ -33,7 +33,6 @@ int find_fibo(int n) {
     return fibo;
 }
 
-// Function to output the result
 void output(int n, int fibo) {
     printf("The %dth Fibonacci number is: %d\n", n, fibo);
 }
