@@ -1,6 +1,19 @@
 #include <stdio.h>
 #include <math.h>
+int main() {
+    Line l;
 
+    // Input line
+    l = input_line();
+
+    // Calculate length
+    find_length(&l);
+
+    // Output result
+    output(l);
+
+    return 0;
+}
 typedef struct point {
     float x, y;
 } Point;
