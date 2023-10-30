@@ -1,0 +1,5 @@
+Compilation started at 10/30/2023, 10:30:08 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem08.c: In function 'main':
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem08.c:4:5: error: unknown type name 'Polygon'
+     Polygon poly;
+     ^~~~~~~
