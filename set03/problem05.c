@@ -1,5 +1,19 @@
 #include <stdio.h>
+int main() {
+    int n;
 
+    n = input_array_size();
+
+    int a[n+1];
+
+    init_array(n, a);
+
+    eratosthenes_sieve(n, a);
+
+    output(n, a);
+
+    return 0;
+}
 // Function to input the array size (n)
 int input_array_size() {
     int n;
@@ -37,23 +51,4 @@ void output(int n, int a[n]) {
     printf("\n");
 }
 
-int main() {
-    int n;
 
-    // Input the upper limit (n)
-    n = input_array_size();
-
-    // Create an array of size n+1
-    int a[n+1];
-
-    // Initialize the array
-    init_array(n, a);
-
-    // Apply Eratosthenes Sieve method
-    eratosthenes_sieve(n, a);
-
-    // Output the prime numbers
-    output(n, a);
-
-    return 0;
-}
