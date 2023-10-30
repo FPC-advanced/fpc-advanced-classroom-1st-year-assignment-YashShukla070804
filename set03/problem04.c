@@ -1,18 +1,18 @@
 #include <stdio.h>
+int input();
+int find_fibo(int n);
+void output(int n, int fibo);
 int main() {
     int n, fibo;
 
     n = input();
 
-    // Find the nth Fibonacci number
     fibo = find_fibo(n);
 
-    // Output the result
     output(n, fibo);
 
     return 0;
 }
-// Function to input the value of n
 int input() {
     int n;
     printf("Enter the value of n: ");
@@ -20,7 +20,6 @@ int input() {
     return n;
 }
 
-// Function to find the nth Fibonacci number
 int find_fibo(int n) {
     if (n <= 1)
         return n;
