@@ -33,10 +33,9 @@ int sub_str_index(char* string, char* substring) {
             return i;
     }
 
-    return -1; // Substring not found
-}
+    return -1; 
 
-// Function to output the result
+
 void output(char* string, char* substring, int index) {
     if (index != -1)
         printf("The substring '%s' is found at index %d in the string '%s'.\n", substring, index, string);
