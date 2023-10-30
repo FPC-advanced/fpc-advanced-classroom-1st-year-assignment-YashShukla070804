@@ -1,4 +1,8 @@
 #include <stdio.h>
+ int input_array_size();
+void init_array(int n, int a[n]);
+void erotosthenes_sieve(int n, int a[n]);
+void output(int n, int a[n]);
 int main() {
     int n;
 
@@ -37,7 +41,6 @@ void eratosthenes_sieve(int n, int a[n]) {
     }
 }
 
-// Function to output the prime numbers
 void output(int n, int a[n]) {
     printf("Prime numbers between 2 and %d are:\n", n);
     for (int i = 2; i <= n; i++) {
