@@ -43,7 +43,6 @@ Point input_point() {
     return p;
 }
 
-// Function to input a line
 Line input_line() {
     Line l;
     printf("Enter the coordinates of Point 1:\n");
@@ -53,12 +52,10 @@ Line input_line() {
     return l;
 }
 
-// Function to calculate the distance (length) of a line
 void find_length(Line *l) {
     l->distance = sqrt(pow((l->p2.x - l->p1.x), 2) + pow((l->p2.y - l->p1.y), 2));
 }
 
-// Function to output the result
 void output(Line l) {
     printf("Length of the line between (%.2f, %.2f) and (%.2f, %.2f) is %.2f units.\n",
            l.p1.x, l.p1.y, l.p2.x, l.p2.y, l.distance);
