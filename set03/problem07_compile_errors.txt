@@ -48,3 +48,103 @@ c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
  void output(Line l);
       ^~~~~~
 Compilation finished at 10/30/2023, 10:21:44 PM
+Compilation started at 10/30/2023, 10:22:08 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:28:16: error: redefinition of 'struct point'
+ typedef struct point {
+                ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:3:16: note: originally defined here
+ typedef struct point {
+                ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:30:3: error: conflicting types for 'Point'
+ } Point;
+   ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:5:3: note: previous declaration of 'Point' was here
+ } Point;
+   ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:32:16: error: redefinition of 'struct line'
+ typedef struct line {
+                ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:7:16: note: originally defined here
+ typedef struct line {
+                ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:35:3: error: conflicting types for 'Line'
+ } Line;
+   ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:10:3: note: previous declaration of 'Line' was here
+ } Line;
+   ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:37:7: error: conflicting types for 'input_point'
+ Point input_point() {
+       ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:12:7: note: previous declaration of 'input_point' was here
+ Point input_point();
+       ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:46:6: error: conflicting types for 'input_line'
+ Line input_line() {
+      ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:13:6: note: previous declaration of 'input_line' was here
+ Line input_line();
+      ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:55:6: error: conflicting types for 'find_length'
+ void find_length(Line *l) {
+      ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:14:6: note: previous declaration of 'find_length' was here
+ void find_length(Line *l);
+      ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:59:6: error: conflicting types for 'output'
+ void output(Line l) {
+      ^~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:15:6: note: previous declaration of 'output' was here
+ void output(Line l);
+      ^~~~~~
+Compilation finished at 10/30/2023, 10:22:08 PM
+Compilation started at 10/30/2023, 10:22:25 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:28:16: error: redefinition of 'struct point'
+ typedef struct point {
+                ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:3:16: note: originally defined here
+ typedef struct point {
+                ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:30:3: error: conflicting types for 'Point'
+ } Point;
+   ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:5:3: note: previous declaration of 'Point' was here
+ } Point;
+   ^~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:32:16: error: redefinition of 'struct line'
+ typedef struct line {
+                ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:7:16: note: originally defined here
+ typedef struct line {
+                ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:35:3: error: conflicting types for 'Line'
+ } Line;
+   ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:10:3: note: previous declaration of 'Line' was here
+ } Line;
+   ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:37:7: error: conflicting types for 'input_point'
+ Point input_point() {
+       ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:12:7: note: previous declaration of 'input_point' was here
+ Point input_point();
+       ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:46:6: error: conflicting types for 'input_line'
+ Line input_line() {
+      ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:13:6: note: previous declaration of 'input_line' was here
+ Line input_line();
+      ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:55:6: error: conflicting types for 'find_length'
+ void find_length(Line *l) {
+      ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:14:6: note: previous declaration of 'find_length' was here
+ void find_length(Line *l);
+      ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:59:6: error: conflicting types for 'output'
+ void output(Line l) {
+      ^~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:15:6: note: previous declaration of 'output' was here
+ void output(Line l);
+      ^~~~~~
+Compilation finished at 10/30/2023, 10:22:25 PM
