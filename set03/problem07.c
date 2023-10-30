@@ -1,15 +1,26 @@
 #include <stdio.h>
 #include <math.h>
+typedef struct point {
+    float x, y;
+} Point;
+
+typedef struct line {
+    Point p1, p2;
+    float distance;
+} Line;
+
+Point input_point();
+Line input_line();
+void find_length(Line *l);
+void output(Line l);
+
 int main() {
     Line l;
 
-    // Input line
     l = input_line();
 
-    // Calculate length
     find_length(&l);
 
-    // Output result
     output(l);
 
     return 0;
@@ -23,7 +34,6 @@ typedef struct line {
     float distance;
 } Line;
 
-// Function to input a point
 Point input_point() {
     Point p;
     printf("Enter the x-coordinate: ");
