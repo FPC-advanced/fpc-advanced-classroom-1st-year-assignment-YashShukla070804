@@ -12,3 +12,7 @@ Undefined command: "git".  Try "help".
 Undefined command: "git".  Try "help".
 Undefined command: "gcc".  Try "help".
 Undefined command: "".  Try "help".
+Undefined command: "gdb".  Try "help".
+The program is not being run.
+Undefined set logging command: "enabled on".  Try "help set logging".
+Already logging to problem02_debug_log.txt.
