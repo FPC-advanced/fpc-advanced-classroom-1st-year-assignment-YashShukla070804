@@ -1,5 +1,23 @@
 #include <stdio.h>
 #include <math.h>
+
+typedef struct point {
+    float x, y;
+} Point;
+
+typedef struct polygon {
+    int sides;
+    Point p[100];
+    float perimeter;
+} Polygon;
+
+int input_n();
+Point input_point(char *prompt_msg);
+int input_polygon(Polygon *p);
+float find_distance(Point a, Point b);
+void find_perimeter(Polygon *p);
+void output(Polygon p);
+
 int main() {
     Polygon poly;
 
@@ -12,15 +30,6 @@ int main() {
 
     return 0;
 }
-typedef struct point {
-    float x, y;
-} Point;
-
-typedef struct polygon {
-    int sides;
-    Point p[100];
-    float perimeter;
-} Polygon;
 
 int input_n() {
     int n;
@@ -52,7 +61,8 @@ int input_polygon(Polygon *p) {
         p->p[i] = input_point(prompt_msg);
     }
 
-    return 1; }
+    return 1; 
+}
 
 float find_distance(Point a, Point b) {
     return sqrt(pow((b.x - a.x), 2) + pow((b.y - a.y), 2));
@@ -71,5 +81,3 @@ void find_perimeter(Polygon *p) {
 void output(Polygon p) {
     printf("The perimeter of the polygon is %.2f units.\n", p.perimeter);
 }
-
-
