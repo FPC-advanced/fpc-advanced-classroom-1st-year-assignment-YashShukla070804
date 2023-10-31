@@ -148,3 +148,37 @@ c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
  void output(Line l);
       ^~~~~~
 Compilation finished at 10/30/2023, 10:22:25 PM
+Compilation started at 10/31/2023, 10:53:29 AM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c: In function 'main':
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:4:5: error: unknown type name 'Line'
+     Line l;
+     ^~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:5:9: warning: implicit declaration of function 'input_line' [-Wimplicit-function-declaration]
+     l = input_line();
+         ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:6:5: warning: implicit declaration of function 'find_length' [-Wimplicit-function-declaration]
+     find_length(&l);
+     ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:7:5: warning: implicit declaration of function 'output' [-Wimplicit-function-declaration]
+     output(l);
+     ^~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c: At top level:
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:28:6: error: conflicting types for 'input_line'
+ Line input_line() {
+      ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:5:9: note: previous implicit declaration of 'input_line' was here
+     l = input_line();
+         ^~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:37:6: warning: conflicting types for 'find_length'
+ void find_length(Line *l) {
+      ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:6:5: note: previous implicit declaration of 'find_length' was here
+     find_length(&l);
+     ^~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:41:6: warning: conflicting types for 'output'
+ void output(Line l) {
+      ^~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem07.c:7:5: note: previous implicit declaration of 'output' was here
+     output(l);
+     ^~~~~~
+Compilation finished at 10/31/2023, 10:53:29 AM
