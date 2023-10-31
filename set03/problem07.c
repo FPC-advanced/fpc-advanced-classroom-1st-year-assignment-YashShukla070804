@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-// Structure declarations
 typedef struct point {
     float x, y;
 } Point;
@@ -11,7 +10,6 @@ typedef struct line {
     float distance;
 } Line;
 
-// Function declarations
 Point input_point();
 Line input_line();
 void find_length(Line *l);
@@ -20,13 +18,10 @@ void output(Line l);
 int main() {
     Line l;
 
-    // Input line
     l = input_line();
 
-    // Calculate length
     find_length(&l);
 
-    // Output result
     output(l);
 
     return 0;
