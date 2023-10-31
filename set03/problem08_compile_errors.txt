@@ -3,3 +3,5 @@ c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
 c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set03\problem08.c:4:5: error: unknown type name 'Polygon'
      Polygon poly;
      ^~~~~~~
+Compilation started at 10/31/2023, 11:14:33 AM
+Compilation finished at 10/31/2023, 11:14:33 AM
