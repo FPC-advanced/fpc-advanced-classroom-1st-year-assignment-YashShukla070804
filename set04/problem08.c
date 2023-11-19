@@ -60,7 +60,6 @@ Fraction add_fractions(Fraction f1, Fraction f2) {
     return sum;
 }
 
-// Function to add n fractions
 Fraction add_n_fractions(int n, Fraction f[n]) {
     Fraction sum = f[0];
 
@@ -71,7 +70,6 @@ Fraction add_n_fractions(int n, Fraction f[n]) {
     return sum;
 }
 
-// Function to output the result
 void output(int n, Fraction f[n], Fraction sum) {
     printf("Entered Fractions:\n");
     for (int i = 0; i < n; i++) {
@@ -82,17 +80,13 @@ void output(int n, Fraction f[n], Fraction sum) {
 }
 
 int main() {
-    // Input the number of fractions (n)
     int n = input_n();
 
-    // Input n fractions
     Fraction fractions[n];
     input_n_fractions(n, fractions);
 
-    // Add n fractions
     Fraction sum = add_n_fractions(n, fractions);
 
-    // Output the result
     output(n, fractions, sum);
 
     return 0;
