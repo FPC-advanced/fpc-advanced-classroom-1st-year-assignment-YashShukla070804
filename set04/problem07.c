@@ -1,6 +1,15 @@
 #include <stdio.h>
 
-// Fraction structure definition
+int main() {
+    Fraction frac1 = input_fraction();
+    Fraction frac2 = input_fraction();
+
+    Fraction sum = add_fractions(frac1, frac2);
+
+    output(frac1, frac2, sum);
+
+    return 0;
+}
 typedef struct {
     int num, den;
 } Fraction;
