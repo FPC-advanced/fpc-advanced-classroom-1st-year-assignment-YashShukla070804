@@ -1,6 +1,6 @@
 #include <stdio.h>
-typedef struct fraction
-{
+
+typedef struct fraction {
     int num, den;
 } Fraction;
 
@@ -11,6 +11,7 @@ int find_gcd(int a, int b);
 Fraction add_fractions(Fraction f1, Fraction f2);
 Fraction add_n_fractions(int n, Fraction f[n]);
 void output(int n, Fraction f[n], Fraction sum);
+
 int main() {
     int n = input_n();
 
@@ -23,9 +24,6 @@ int main() {
 
     return 0;
 }
-typedef struct fraction {
-    int num, den;
-} Fraction;
 
 int input_n() {
     int n;
@@ -93,5 +91,3 @@ void output(int n, Fraction f[n], Fraction sum) {
 
     printf("The sum of fractions is: %d/%d\n", sum.num, sum.den);
 }
-
-
