@@ -45,23 +45,10 @@ Fraction add_fractions(Fraction f1, Fraction f2) {
     return sum;
 }
 
-// Function to output the result
 void output(Fraction f1, Fraction f2, Fraction f3, Fraction sum) {
     printf("Fraction 1: %d/%d\n", f1.num, f1.den);
     printf("Fraction 2: %d/%d\n", f2.num, f2.den);
     printf("The sum of fractions is: %d/%d\n", sum.num, sum.den);
 }
 
-int main() {
-    // Input two fractions
-    Fraction frac1 = input_fraction();
-    Fraction frac2 = input_fraction();
 
-    // Add the fractions
-    Fraction sum = add_fractions(frac1, frac2);
-
-    // Output the result
-    output(frac1, frac2, sum);
-
-    return 0;
-}
