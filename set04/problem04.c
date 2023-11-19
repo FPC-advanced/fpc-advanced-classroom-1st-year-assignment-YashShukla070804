@@ -51,7 +51,6 @@ float evaluate_polynomial(int n, float a[n], float x) {
     return result;
 }
 
-// Function to output the result
 void output(int n, float a[n], float x, float result) {
     printf("The polynomial P(x) = ");
     
