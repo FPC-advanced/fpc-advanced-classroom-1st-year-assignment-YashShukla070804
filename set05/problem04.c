@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function to input camel details
 void input_camel_details(float *radius, float *height, float *length) {
     printf("Enter the stomach radius of the camel: ");
     scanf("%f", radius);
@@ -12,12 +11,11 @@ void input_camel_details(float *radius, float *height, float *length) {
     scanf("%f", length);
 }
 
-// Function to determine the mood of the camel
 int find_mood(float radius, float height, float length) {
     if (radius < height && radius < length) {
-        return 1; // Sick
+        return 1; 
     } else if (height < length && height < radius) {
-        return 2; // Happy
+        return 2; 
     } else if (length < height && length < radius) {
         return 3; 
     } else {
