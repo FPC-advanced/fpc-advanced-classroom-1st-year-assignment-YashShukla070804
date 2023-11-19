@@ -1,5 +1,17 @@
 #include <stdio.h>
 
+int main() {
+    int n = input_n();
+
+    Fraction fractions[n];
+    input_n_fractions(n, fractions);
+
+    Fraction sum = add_n_fractions(n, fractions);
+
+    output(n, fractions, sum);
+
+    return 0;
+}
 typedef struct fraction {
     int num, den;
 } Fraction;
