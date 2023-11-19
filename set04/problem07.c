@@ -14,7 +14,7 @@ int main() {
 
     Fraction sum = add_fractions(frac1, frac2);
 
-    output(frac1, frac2, sum);
+    output(frac1, frac2, fracsum);
 
     return 0;
 }
