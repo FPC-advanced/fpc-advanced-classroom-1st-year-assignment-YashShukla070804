@@ -19,7 +19,6 @@ int main() {
 
     return 0;
 }
-// Function to input the degree of the polynomial
 int input_degree() {
     int degree;
     printf("Enter the degree of the polynomial: ");
@@ -27,7 +26,6 @@ int input_degree() {
     return degree;
 }
 
-// Function to input coefficients of the polynomial
 void input_coefficients(int n, float a[n]) {
     printf("Enter the coefficients of the polynomial from highest degree to constant term:\n");
     for (int i = n; i >= 0; i--) {
@@ -36,7 +34,6 @@ void input_coefficients(int n, float a[n]) {
     }
 }
 
-// Function to input the value of x
 float input_x() {
     float x;
     printf("Enter the value of x for evaluation: ");
@@ -44,11 +41,9 @@ float input_x() {
     return x;
 }
 
-// Function to evaluate the polynomial using Horner's Method
 float evaluate_polynomial(int n, float a[n], float x) {
-    float result = a[0]; // Initialize result with the constant term
+    float result = a[0]; 
 
-    // Horner's Method: P(x) = a[0] + x(a[1] + x(a[2] + ... + x(a[n-1] + x*a[n])...))
     for (int i = 1; i <= n; i++) {
         result = result * x + a[i];
     }
