@@ -1,5 +1,34 @@
 #include <stdio.h>
+int main() {
+    int degree = input_degree();
 
+    float coefficients[degree + 1];
+
+    input_coefficients(degree, coefficients);
+
+    float x = input_x();
+
+    float result = evaluate_polynomial(degree, coefficients, x);
+
+    output(degree, coefficients, x, result);
+
+    return 0;
+}
+int main() {
+    int degree = input_degree();
+
+    float coefficients[degree + 1];
+
+    input_coefficients(degree, coefficients);
+
+    float x = input_x();
+
+    float result = evaluate_polynomial(degree, coefficients, x);
+
+    output(degree, coefficients, x, result);
+
+    return 0;
+}
 // Function to input the degree of the polynomial
 int input_degree() {
     int degree;
@@ -50,18 +79,4 @@ void output(int n, float a[n], float x, float result) {
     printf("Evaluated at x = %.2f, the result is: %.2f\n", x, result);
 }
 
-int main() {
-    int degree = input_degree();
 
-    float coefficients[degree + 1];
-
-    input_coefficients(degree, coefficients);
-
-    float x = input_x();
-
-    float result = evaluate_polynomial(degree, coefficients, x);
-
-    output(degree, coefficients, x, result);
-
-    return 0;
-}
