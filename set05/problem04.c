@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 void input_camel_details(float *radius, float *height, float *length);
-int find_mood(float radius, float height, float length)
+int find_mood(float radius, float height, float length);  // Added missing semicolon here
 void output(float radius, float height, float length, int mood);
 
 int main() {
@@ -15,6 +16,7 @@ int main() {
 
     return 0;
 }
+
 void input_camel_details(float *radius, float *height, float *length) {
     printf("Enter the stomach radius of the camel: ");
     scanf("%f", radius);
@@ -28,13 +30,13 @@ void input_camel_details(float *radius, float *height, float *length) {
 
 int find_mood(float radius, float height, float length) {
     if (radius < height && radius < length) {
-        return 1; 
+        return 1;
     } else if (height < length && height < radius) {
-        return 2; 
+        return 2;
     } else if (length < height && length < radius) {
-        return 3; 
+        return 3;
     } else {
-        return 0; 
+        return 0;
     }
 }
 
@@ -54,5 +56,3 @@ void output(float radius, float height, float length, int mood) {
         printf("Unable to determine the camel's mood.\n");
     }
 }
-
-
