@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <string.h>
 
+int main() {
+    char inputString[1000];
+
+    input_string(inputString);
+
+    int wordCount = count_words(inputString);
+
+    output(inputString, wordCount);
+
+    return 0;
+}
 void input_string(char *a) {
     printf("Enter a string: ");
     fgets(a, 1000, stdin);
