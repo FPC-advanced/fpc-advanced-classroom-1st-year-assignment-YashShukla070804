@@ -19,12 +19,10 @@ void input_n_and_r(int *n, int *r) {
     scanf("%d", r);
 }
 
-// Function to calculate nCr
 int nCr(int n, int r) {
     if (r == 0 || r == n) {
         return 1;
     } else {
-        // Using recursive formula: nCr = (n-1)C(r-1) + (n-1)Cr
         return nCr(n - 1, r - 1) + nCr(n - 1, r);
     }
 }
