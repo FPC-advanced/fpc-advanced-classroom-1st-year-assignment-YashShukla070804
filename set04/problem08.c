@@ -4,7 +4,6 @@ typedef struct fraction {
     int num, den;
 } Fraction;
 
-// Function to input the value of n
 int input_n() {
     int n;
     printf("Enter the number of fractions (n): ");
@@ -12,7 +11,6 @@ int input_n() {
     return n;
 }
 
-// Function to input a fraction
 Fraction input_fraction() {
     Fraction frac;
     printf("Enter the numerator: ");
@@ -24,7 +22,6 @@ Fraction input_fraction() {
     return frac;
 }
 
-// Function to input n fractions
 void input_n_fractions(int n, Fraction f[n]) {
     for (int i = 0; i < n; i++) {
         printf("Enter Fraction %d:\n", i + 1);
@@ -74,15 +71,4 @@ void output(int n, Fraction f[n], Fraction sum) {
     printf("The sum of fractions is: %d/%d\n", sum.num, sum.den);
 }
 
-int main() {
-    int n = input_n();
 
-    Fraction fractions[n];
-    input_n_fractions(n, fractions);
-
-    Fraction sum = add_n_fractions(n, fractions);
-
-    output(n, fractions, sum);
-
-    return 0;
-}
