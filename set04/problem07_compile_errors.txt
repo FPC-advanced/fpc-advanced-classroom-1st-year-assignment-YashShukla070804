@@ -1,0 +1,9 @@
+Compilation started at 11/19/2023, 11:04:06 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem07.c: In function 'main':
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem07.c:17:5: error: too few arguments to function 'output'
+     output(frac1, frac2, sum);
+     ^~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem07.c:9:6: note: declared here
+ void output(Fraction f1, Fraction f2, Fraction f3, Fraction sum);
+      ^~~~~~
+Compilation finished at 11/19/2023, 11:04:06 PM
