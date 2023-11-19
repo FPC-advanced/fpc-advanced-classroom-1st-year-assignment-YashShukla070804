@@ -1,6 +1,16 @@
 #include <stdio.h>
+int main() {
+    int n, r;
 
-// Function to input values for n and r
+    input_n_and_r(&n, &r);
+
+    int result = nCr(n, r);
+
+    output(n, r, result);
+
+    return 0;
+}
+
 void input_n_and_r(int *n, int *r) {
     printf("Enter the value of n: ");
     scanf("%d", n);
