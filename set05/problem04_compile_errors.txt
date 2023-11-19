@@ -1,0 +1,11 @@
+Compilation started at 11/19/2023, 11:46:37 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set05\problem04.c: In function 'find_mood':
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set05\problem04.c:6:12: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int main() {
+            ^
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set05\problem04.c:18:71: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ void input_camel_details(float *radius, float *height, float *length) {
+                                                                       ^
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set05\problem04.c:29:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ int find_mood(float radius, float height, float length) {
+                                                         ^
