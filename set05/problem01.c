@@ -16,11 +16,9 @@ int main() {
     Point point1, point2;
     float result;
 
-    // Input two points
     point1 = input();
     point2 = input();
 
-    // Calculate the distance between two points
     dist(point1, point2, &result);
 
     output(point1, point2, result);
