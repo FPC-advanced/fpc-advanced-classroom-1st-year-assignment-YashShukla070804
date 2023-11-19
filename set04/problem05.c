@@ -12,7 +12,6 @@ int main() {
 
     return 0;
 }
-// Function to input the size of the array
 int input_size() {
     int size;
     printf("Enter the size of the array: ");
@@ -20,7 +19,6 @@ int input_size() {
     return size;
 }
 
-// Function to input elements of the array
 void input_array(int n, int a[n]) {
     printf("Enter the elements of the array:\n");
     for (int i = 0; i < n; i++) {
@@ -29,7 +27,6 @@ void input_array(int n, int a[n]) {
     }
 }
 
-// Function to find the index of the largest number in the array
 int find_largest_index(int n, int a[n]) {
     int largestIndex = 0;
 
@@ -42,7 +39,6 @@ int find_largest_index(int n, int a[n]) {
     return largestIndex;
 }
 
-// Function to output the result
 void output(int index) {
     printf("The index of the largest number in the array is: %d\n", index);
 }
