@@ -1,5 +1,17 @@
 #include <stdio.h>
+int main() {
+    int size = input_size();
 
+    int array[size];
+
+    input_array(size, array);
+
+    int largestIndex = find_largest_index(size, array);
+
+    output(largestIndex);
+
+    return 0;
+}
 // Function to input the size of the array
 int input_size() {
     int size;
@@ -35,16 +47,4 @@ void output(int index) {
     printf("The index of the largest number in the array is: %d\n", index);
 }
 
-int main() {
-    int size = input_size();
 
-    int array[size];
-
-    input_array(size, array);
-
-    int largestIndex = find_largest_index(size, array);
-
-    output(largestIndex);
-
-    return 0;
-}
