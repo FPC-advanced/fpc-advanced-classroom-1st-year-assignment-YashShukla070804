@@ -19,13 +19,12 @@ int find_mood(float radius, float height, float length) {
     } else if (height < length && height < radius) {
         return 2; // Happy
     } else if (length < height && length < radius) {
-        return 3; // Tense
+        return 3; 
     } else {
-        return 0; // Default
+        return 0; 
     }
 }
 
-// Function to output the result
 void output(float radius, float height, float length, int mood) {
     printf("Camel Details:\n");
     printf("Stomach Radius: %.2f\n", radius);
