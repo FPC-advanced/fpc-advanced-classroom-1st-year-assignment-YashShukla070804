@@ -4,7 +4,6 @@ typedef struct {
     int num, den;
 } Fraction;
 
-// Function to input a fraction
 Fraction input_fraction() {
     Fraction frac;
     printf("Enter the numerator: ");
@@ -16,7 +15,6 @@ Fraction input_fraction() {
     return frac;
 }
 
-// Function to find the greatest common divisor (GCD) of two numbers
 int find_gcd(int a, int b) {
     while (b != 0) {
         int temp = b;
@@ -26,17 +24,13 @@ int find_gcd(int a, int b) {
     return a;
 }
 
-// Function to add two fractions
 Fraction add_fractions(Fraction f1, Fraction f2) {
     Fraction sum;
 
-    // Cross-multiply to find a common denominator
     sum.den = f1.den * f2.den;
 
-    // Add the numerators
     sum.num = f1.num * f2.den + f2.num * f1.den;
 
-    // Simplify the result by dividing numerator and denominator by their GCD
     int gcd = find_gcd(sum.num, sum.den);
     sum.num /= gcd;
     sum.den /= gcd;
