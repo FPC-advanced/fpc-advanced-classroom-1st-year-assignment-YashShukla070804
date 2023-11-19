@@ -1,5 +1,16 @@
 #include <stdio.h>
+int main() {
+    float stomach_radius, camel_height, camel_length;
+    int camel_mood;
 
+    input_camel_details(&stomach_radius, &camel_height, &camel_length);
+
+    camel_mood = find_mood(stomach_radius, camel_height, camel_length);
+
+    output(stomach_radius, camel_height, camel_length, camel_mood);
+
+    return 0;
+}
 void input_camel_details(float *radius, float *height, float *length) {
     printf("Enter the stomach radius of the camel: ");
     scanf("%f", radius);
@@ -40,15 +51,4 @@ void output(float radius, float height, float length, int mood) {
     }
 }
 
-int main() {
-    float stomach_radius, camel_height, camel_length;
-    int camel_mood;
 
-    input_camel_details(&stomach_radius, &camel_height, &camel_length);
-
-    camel_mood = find_mood(stomach_radius, camel_height, camel_length);
-
-    output(stomach_radius, camel_height, camel_length, camel_mood);
-
-    return 0;
-}
