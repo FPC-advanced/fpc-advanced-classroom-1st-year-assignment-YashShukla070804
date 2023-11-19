@@ -42,3 +42,5 @@ c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-ass
  void output(int n, Fraction f[n], Fraction sum);
       ^~~~~~
 Compilation finished at 11/19/2023, 11:20:06 PM
+Compilation started at 11/19/2023, 11:23:21 PM
+Compilation finished at 11/19/2023, 11:23:21 PM
