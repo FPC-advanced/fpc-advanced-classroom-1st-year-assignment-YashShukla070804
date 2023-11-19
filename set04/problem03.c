@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     int n, r;
 
@@ -22,7 +23,8 @@ void input_n_and_r(int *n, int *r) {
 int nCr(int n, int r) {
     if (r == 0 || r == n) {
         return 1;
-    } else {
+    }
+     else {
         return nCr(n - 1, r - 1) + nCr(n - 1, r);
     }
 }
