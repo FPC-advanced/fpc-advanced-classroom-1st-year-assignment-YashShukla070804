@@ -1,19 +1,5 @@
 #include <stdio.h>
-int main() {
-    int degree = input_degree();
 
-    float coefficients[degree + 1];
-
-    input_coefficients(degree, coefficients);
-
-    float x = input_x();
-
-    float result = evaluate_polynomial(degree, coefficients, x);
-
-    output(degree, coefficients, x, result);
-
-    return 0;
-}
 int main() {
     int degree = input_degree();
 
