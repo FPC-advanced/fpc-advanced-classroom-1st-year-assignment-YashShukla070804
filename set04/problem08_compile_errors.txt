@@ -1,0 +1,44 @@
+Compilation started at 11/19/2023, 11:20:05 PM
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:26:16: error: redefinition of 'struct fraction'
+ typedef struct fraction {
+                ^~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:2:16: note: originally defined here
+ typedef struct fraction
+                ^~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:28:3: error: conflicting types for 'Fraction'
+ } Fraction;
+   ^~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:5:3: note: previous declaration of 'Fraction' was here
+ } Fraction;
+   ^~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:37:10: error: conflicting types for 'input_fraction'
+ Fraction input_fraction() {
+          ^~~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:8:10: note: previous declaration of 'input_fraction' was here
+ Fraction input_fraction();
+          ^~~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:48:6: error: conflicting types for 'input_n_fractions'
+ void input_n_fractions(int n, Fraction f[n]) {
+      ^~~~~~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:9:6: note: previous declaration of 'input_n_fractions' was here
+ void input_n_fractions(int n, Fraction f[n]);
+      ^~~~~~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:64:10: error: conflicting types for 'add_fractions'
+ Fraction add_fractions(Fraction f1, Fraction f2) {
+          ^~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:11:10: note: previous declaration of 'add_fractions' was here
+ Fraction add_fractions(Fraction f1, Fraction f2);
+          ^~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:78:10: error: conflicting types for 'add_n_fractions'
+ Fraction add_n_fractions(int n, Fraction f[n]) {
+          ^~~~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:12:10: note: previous declaration of 'add_n_fractions' was here
+ Fraction add_n_fractions(int n, Fraction f[n]);
+          ^~~~~~~~~~~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:88:6: error: conflicting types for 'output'
+ void output(int n, Fraction f[n], Fraction sum) {
+      ^~~~~~
+c:\Users\girje\github-classroom\FPC-advanced\fpc-advanced-classroom-1st-year-assignment-YashShukla070804\set04\problem08.c:13:6: note: previous declaration of 'output' was here
+ void output(int n, Fraction f[n], Fraction sum);
+      ^~~~~~
+Compilation finished at 11/19/2023, 11:20:06 PM
